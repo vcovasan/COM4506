@@ -1,13 +1,16 @@
 
 What was the system?
 --------------------
+The space shuttle.
+
 
 How did the system fail?
 ------------------------
-
+Mechanical failure of an O-ring at the interface between the solid boosters and the liquid fuel engines.
 
 Had there been any prior warnings?
 ----------------------------------
+Undue errosion of the 
 
 
 What parts of the system caused the failure?
