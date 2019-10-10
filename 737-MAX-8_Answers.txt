@@ -1,0 +1,23 @@
+What was the system?
+
+The Manoeuvre Characteristics Augmentation System (MCAS) was to automatically
+correct excessive deviations from the desire aircraft attitude. This was developed
+in response to a tragic plane crash on 29/10/18.
+
+How did the system fail?
+
+Angle of Attack (AOA) sensor failure resulted in mismatched sensor readings,
+which in turn, led to an unwarranted MCAS intervention. The increasing rate of this 
+intervention ultimately overwhelmed the flight crew resulting in the crash.
+
+Had there been any prior warnings?
+
+Yes. Prior to both crashes, a 737 MAX 8 Lion Air flight experienced similar issues.
+
+What part of the system caused the failure?
+A faulty AOA sensor caused the failure.
+
+How could the failure have been prevented?
+
+An investigation into the cause of the identical sensor failures. Testing of the MCAS system 
+under non-ideal conditions.

@@ -1,8 +1,8 @@
+<<<<<<< HEAD
 
 What was the system?
 --------------------
-Boeing 737 Max
-:
+Boeing 737 Max 
 How did the system fail?
 ------------------------
 
@@ -18,3 +18,186 @@ What parts of the system caused the failure?
 How could the failure have been prevented?
 -------------------------------------------
 
+=======
+Therac-25 Case Study
+
+
+<<<<<<< HEAD
+What was the system?
+--------------------
+The space shuttle.
+
+
+How did the system fail?
+------------------------
+Mechanical failure of an O-ring at the interface between the solid boosters and the liquid fuel engines.
+
+Had there been any prior warnings?
+----------------------------------
+Undue errosion of the 
+=======
+
+~~~~~~~~~~~~~~~~~~~~
+
+What was the system? 
+
+
+~~~~~~~~~~~~~~~~~~~~
+>>>>>>> 5e1b1f4c43a37888b672cf5c4466cda1563371e5
+
+
+
+ was a radiation therapy machine, produced by Atomic Energy of Canada Limited (AECL) in the 1980s. Previous variants had been produced in conjunction with a French company, CGR.
+
+Eleven Therac-25s were installed; 5 in the USA, 6 in Canada. 
+
+Therac-25 had two operating modes: 
+
+- Delivering photons at 25 MeV
+
+- Delivering electrons at various energy levels. 
+
+This provided more treatment options and economic benefits, as only one machine was required for both treatment modalities. 
+
+A third mode, "Field Light", allowed the patient to be correctly positioned by illuminating the treatment area with visible light. 
+
+An upper turntable was used to rotate accessory equipment into the beam path to facilitate the three modes.
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+What was the risk?
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+The accelerator beam in raw, concentrated form is very damaging to living tissue.
+
+In electron mode, the computer system controlled the beam energy, from 5-25 MeV, & current. Scanning magnets, mounted on the turntable, were used to adjust the beam shape. An ion chamber was also mounted to measure the beam. 
+
+In X-Ray mode, at 25 MeV, much greater electron current was required to produce comparable output as a beam flattener was used to produce a uniform field - this attenuates the beam and so a very high input dose rate is required to obtain the correct treatment dose rate. 
+
+This is the basic risk - if the beam flattener is not in the correct position, the patient is exposed to an extremely dangerous high output dose. 
+
+The computer was responsible for positioning the turntable in the correct configuration so that the target, beam flattener and X-ray ion chamber align. When the accelerator beam bombards the ion chamber with electrons, X-rays are produced. 
+
+In previous models (Therac-6 and Therac-20) there were several hardware interlocks and safety systems (such as electromechanical switches) so that an inadvertent misalignment of beam and accessories could physically not occur. In Therac-25, software checks were substituted for many of the previous hardware interlocks. 
+
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+How did the system fail?
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+
+Six accidents were documented between 1985 and 1987. Patients were given massive overdoses of radiation, hundreds of times greater than the norm. The radiation sickness induced by the overdose eventually lead to the deaths of three of the six affected patients.
+
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+What part of the system failed?
+~~~~~~~~~~~~~~~~~~~~
+
+
+
+There were two software faults to blame for the incidents. 
+
+1. When the machine operator incorrectly selected X-ray mode and then attempted to switch to electron mode within 8 seconds, the turntable would not switch over to the correct position, leaving neither the scanning magnets or the beam flattener in position, and the patient in the direct line of the beam.
+
+2. A second bug caused the beam to be activated whilst the machine was in field light mode, due to a failure of the software safety interlocks that indicated turntable position. 
+
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+How could the failure have been prevented?
+
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+
+According to the case study, there are several causal factors that should have been given more consideration in order to prevent the failure. 
+
+
+
+- Confusing reliability with safety 
+	
+	
+
+The software was highly reliable, with errors very unlikely. However, unlikely errors were not accounted for in the code, and therefore the code was not safe.
+
+
+
+- Lack of Defensive Design
+
+	
+
+Following on from the previous point, the software was not defensively coded. Self-checks and error-handling features were omitted that could have detected the inconsistencies and coding errors. Patient reactions were the only way to tell how badly the software had failed.
+
+
+
+- Failure to Eliminate Root Causes 
+
+	
+
+Focusing on specific errors is not the way to make a system safe. Most complex software can be forced to malfunction - there will always be another bug to be found. There should be protection against software errors built into both the system and the software itself. Thorough investigation into all faults should be carried out to ensure that all root causes have been found, not just the most obvious contributing factor.
+
+
+
+- Complacency & inadequate follow-up
+
+	
+
+It took an accident to alert people to the dangers involved in tech. The use of medical accelerators had been free of serious incidents for several decades and perhaps this caused a delay in the time it took to resolve the issues surrounding Therac-25
+
+- Superficial and unrealistic risk assessments 
+
+	In this example, the first hazard analyses initially ignored software and then only gave it a cursory glance in follow up analyses. 
+
+
+
+
+- Inadequate software engineering practices
+
+	
+
+Software specs & docs were an afterthought, there were no rigorous software quality assurance practices/standards
+	Designs were unnecessarily complex and dangerous coding practices were prevalent 
+	System testing alone is not adequate - software itself should be tested extensively 
+	GUI and information presentation to the operators, ie error messages, should be carefully designed 
+
+
+
+- Software Reuse
+
+	
+
+Naive assumption often made that reusing software increases safety - in this case lead to an awkward and dangerous design.
+	Rewriting the entire software to get a clean, simple design may be safer. 
+
+
+
+- Safe vs Friendly UI 
+
+	
+
+Safety over ease of use
+
+- User and Gov oversight and standards
+
+	Previous to the event the FDA had little experience with computer controlled devices. 
+	Since the event the FDA improved reporting systems and augmented procedures and guidelines.
+	
+
+	
+
+>>>>>>> 6c5e88ff68979311608a255bfe906d378532adec
