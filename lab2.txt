@@ -1,1 +1,19 @@
 
+What was the system?
+--------------------
+
+How did the system fail?
+------------------------
+
+
+Had there been any prior warnings?
+----------------------------------
+
+
+What parts of the system caused the failure?
+--------------------------------------------
+
+
+How could the failure have been prevented?
+-------------------------------------------
+
